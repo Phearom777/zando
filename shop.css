@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+                rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.navbar .container .navbar-collapse{
+    margin-left: 120px;
+    & .navbar-nav .nav-link{
+        font-size: 16px;
+        text-transform:uppercase ;
+        font-weight: bold;
+        
+    }
+}
+.navbar .container .navbar-collapse .btn{
+    background-color: black;
+    color: white;
+}
+.navbar .container .navbar-collapse .btn:hover{
+    background-color: rgba(0, 0, 0, 0.771);
+}
+.slide .carousel-inner .carousel-item{
+    height: 500px;
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.box-card{
+    margin-left: 0px;
+}
+ .box-card h2,.sidebar{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.container h2{
+    align-items: start;
+}
+.box-card .card .image{
+    overflow: hidden;
+    
+}
+.card .title span{
+    color: red;
+}
+.box-card .card .image img{
+    transition: 0.5s;
+    height: 250px;
+}
+.box-card .card .image:hover img{
+    transform: scale(1.05);
+}
+.box-card .card{
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    height: 400px;
+}
+.box-card .card:hover{
+    border-radius: 30px;
+}
+.box-card .card .btn{
+    border: none;
+    background-color: rgb(26, 135, 245);
+    border-radius: 30px;
+}
+.box-card .card .btn:hover{
+    background-color: rgb(5, 99, 192);
+
+}
+.box-card .card .title .icon{
+    /* background-color: gold; */
+    margin-top: 0px;
+    color: gold;
+}
+.box-card .card .title span{
+    font-size: 14px;
+}
+.box-card .card .title p{
+    font-weight: bold;
+    font-size: 15px;
+}
+/* sidebar */
+.women ,.girl{
+    background-color: pink;
+    padding: 13px;
+    margin-left: 1px;
+}
+.men ,.boy{
+    padding-left: 13px ;
+    margin-left: 1px;
+}
+.sidebar h6{
+    margin-left: 40px;
+    font-weight: bold;
+
+}
+.sidebar .btn{
+    padding: 5px;
+    width: 90px;
+    font-size: 15px;
+    margin-left: 40px;
+    
+}
+/* card */
+.container .row .box-card .row .col-xl-3:nth-child(1){
+    display: none;
+}
+
+/* footer */
+footer{
+    /* height:200px; */
+    background-color: black;
+    padding: 30px;
+}
+.footer h5{
+    margin-bottom: 20px;
+}
+.link h5{
+    margin-left: 30px;
+}
+.footer .link{
+    width: 100%;
+}
+.footer .link ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    list-style: none;
+    /* background-color:darkolivegreen; */
+}
+.footer .link ul li a{
+    text-decoration: none;
+    color: #ffffffc0;
+    gap: 50px;
+    /* background-color:cornflowerblue; */
+    text-align: center;
+}
+article{
+    display: block;
+}
+/*X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .navbar .container .navbar-collapse{
+        margin-left: 5px;
+        /* background-color: blue; */
+    }
+    
+    .box-card{
+        margin-top: 20px;
+        
+    }
+   .sidebar h2{
+    text-align: center;
+    
+   }
+   .sidebar h6{
+    margin-top: 10px;
+    margin-left: 90px;
+    padding-right: 5px;
+    width: 230px;
+    font-size: 15px;
+   }
+   .women ,.girl{
+    padding: 15px;
+    }
+    .sidebar .btn{
+        margin-left: 135px;
+        margin-top: 20px;
+    }
+    .box-card .card .title p{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .slide .carousel-inner .carousel-item{
+        height: 190px;
+    }
+    article{
+        display: none;
+    }
+    .app, .accept{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        /* background-color: antiquewhite; */
+    }
+
+    .link{
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 40px;
+        
+    }
+    .link ul  li a{
+        padding-left: 80px;
+        padding-right: 0px;
+    }
+    .copyright{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 13px;
+          
+    }
+    .copyright{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13px;
+      
+    }
+    .container .row .box-card .row .col-xl-3:nth-child(1){
+        display: block;
+    }
+ }
+    
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */
